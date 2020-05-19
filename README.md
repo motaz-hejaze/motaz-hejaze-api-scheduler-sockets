@@ -8,11 +8,11 @@ requirements:
 ------------------
 
 * first clone the repo:
-  - git clone https://github.com/motaz-hejaze/Api-fetcher.git
+  - git clone https://github.com/motaz-hejaze/motaz-hejaze-api-scheduler-sockets.git
 
 
 * cd into cloned folder:
-  - cd Api-fetcher
+  - cd motaz-hejaze-api-scheduler-sockets
 
 * create virtual environmet:
   - virtualenv venv -p python3.6
@@ -32,10 +32,6 @@ requirements:
   - python manage.py creasuperuser
 
 * runserver:
-  - python manage.py runserver
+  - gunicorn -k eventlet -w 1 project.wsgi:application
 
 * within your browser , go to http://127.0.0.1:8000/
-# api-scheduler-sockets
-# api-scheduler-sockets
-# api-scheduler-sockets
-# motaz-hejaze-api-scheduler-sockets
