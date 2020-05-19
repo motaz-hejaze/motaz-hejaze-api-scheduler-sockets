@@ -21,11 +21,11 @@ requirements:
   - source venv/bin/activate (linux)
 
 * install required python packages:
+  - cd project
   - pip install -r requirements.txt
 
 * create database and tables:
-  - cd project/
-  - python manage.py makemigrations api_fetcher
+  - python manage.py makemigrations
   - python manage.py migrate
 
 * create superuser:
