@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron custom-jumbo">
+    <div class="container">
+      <h1 class="display-3">Welcome!</h1>
+      <h3>An App to collect data from api every 30 seconds using Requests and Advanced Python Scheduler  , save it in database ,
+        then broadcast to all connected clients using Python WebSockets , built by <a href="https://www.linkedin.com/in/al-motaz-hejazy/">HEJAZE</a></h3>
+      <br>
+      <h2>Please Wait 30 seconds for sockets to collect from api :</h2>
+      <div><p id="log"></p></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+    </div>
+    <!-- Example row of columns -->
+    <div class="row" id="items_list">
+    </div>
+
+    <hr>
+
+  </div>
+
+</main>
+
+
+{% endblock %}
